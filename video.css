@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Teko&display=swap');
+
+:root {
+    --main-color: white;
+    --sub-color: grey;
+    --sub-color-more: rgb(66, 66, 66);
+    --anti-color: black;
+}
+
+html {
+    cursor: url("images/logo_32x32.png") 16 16, auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.video_screen {
+    position: absolute;
+    left: 0;
+    top: 45vh;
+    translate: 0% -50%;
+    width: 100vw;
+    height: 25vh;
+}
+
+.prev_ep_button {
+    left: 0;
+}
+.next_ep_button {
+    right: 0;
+}
+.ep_buttons {
+    position: absolute;
+    top: calc(45vh + 150px);
+    width: calc(50vw - 60px - 2px);
+    height: 50px;
+    background-color: var(--sub-color);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--anti-color);
+    border-radius: 5px;
+}
+.color_switch_button {
+    top: calc(45vh + 150px);
+    width: calc(10vh);
+    height: 50px;
+    left: 50%;
+    translate: -50%
+}
+.ep_buttons:hover {
+    background-color: var(--sub-color-more);
+    color: var(--main-color)
+}
+
+.center_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.ep_button_txt {
+    font-weight: bold;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.show_profile_pic {
+    position: absolute;
+    background-image: url("images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45vw;
+    aspect-ratio: 1/1;
+    translate: -20% -20%;
+}
+
+
+.episode_num {
+    position: absolute;
+    margin-top: 1vh;
+    left: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--anti-color);
+    translate: -50%;
+    font-family: Josefin Sans;
+}
+.episode_title {
+    position: absolute;
+    margin-top: 8vh;
+    left: 50%;
+    font-size: 40px;
+    color: var(--anti-color);
+    translate: -50%;
+    font-family: Teko;
+    width: 100%;
+    text-align: center;
+}
+
+.color_toggle_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    height: 30px;
+    aspect-ratio: 1/1;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+@media screen and (orientation: landscape) {
+    .video_screen {
+        left: 50%;
+        translate: -50% -50%;
+        width: 800px;
+        height: 450px;
+        border-radius: 5px;
+        border: none;
+    }
+    .prev_ep_button {
+        top: calc(45vh + 280px);
+        width: 320px;
+        height: 50px;
+        left: calc(50vw - 400px);
+    }
+    .color_switch_button {
+        top: calc(45vh + 280px);
+        width: 145px;
+        height: 50px;
+        left: 50%;
+        translate: -50%
+    }
+    .next_ep_button {
+        top: calc(45vh + 280px);
+        width: 320px;
+        height: 50px;
+        left: calc(50vw + 80px);
+    }
+    .show_profile_pic {
+        position: absolute;
+        background-image: url("images/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20vw;
+        aspect-ratio: 1/1;
+        translate: -20% -20%;
+    }
+    .episode_num {
+        position: absolute;
+        margin-top: 1vh;
+        left: 50%;
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--anti-color);
+        translate: -50%;
+        font-family: Josefin Sans;
+    }
+    .episode_title {
+        position: absolute;
+        margin-top: 8vh;
+        left: 50%;
+        font-size: 40px;
+        color: var(--anti-color);
+        translate: -50%;
+        font-family: Teko;
+    }
+}
+
+
+
+
+.doughnut {
+    position: absolute;
+    background-image: url("images/DOUGHNUT.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    aspect-ratio: 1/1;
+    left: 0;
+    bottom: 0;
+    margin: 2%;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 0px 10px rgb(48, 48, 48));
+}
+
+.rengoku_jumpscare {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none
+}
+
+.rengoku {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: url("images/rengoku.jpg");
+    height: 60vh;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+}
+
+.rengoku_nice {
+    position: absolute;
+    left: 50%;
+    top: -400%;
+    translate: -50%;
+    height: 200px;
+    width: 100px;
+    background-image: url("images/rengokuNice.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none
+}
