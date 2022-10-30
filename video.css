@@ -77,9 +77,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 45vw;
+    width: 25vw;
     aspect-ratio: 1/1;
-    translate: -20% -20%;
+    z-index: 999;
+    margin: 1%;
+    transition: 0.1s;
+}
+.show_profile_pic:hover {
+    rotate: -30deg;
 }
 
 
@@ -151,9 +156,8 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 20vw;
+        width: 10vw;
         aspect-ratio: 1/1;
-        translate: -20% -20%;
     }
     .episode_num {
         position: absolute;
