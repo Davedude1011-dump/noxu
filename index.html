@@ -46,7 +46,7 @@
                     <div class="shows_menu_num6 shows_menu_inner"></div>
                     <div class="shows_menu_num7 shows_menu_inner"></div>
                     <div class="shows_menu_num8 shows_menu_inner"></div>
-                    <div class="shows_menu_num9 shows_menu_inner"></div>
+                    <div class="shows_menu_num9 shows_menu_inner" style="opacity: 0.1"></div>
                 </div>
                 <div class="credits_hidden_menu menus_fade_out">
                     <div class="right_box_outer">
@@ -72,18 +72,50 @@
                     <div class="start_button_svg"></div>
                 </div>
             </div>
-            <div class="mob_menus menus_fade_out">
-                <div class="credits_box_mob">
+            <div class="mob_menus">
+                <div class="credits_box_mob" onclick="credits_mob()">
                     <div class="credits_icon menu_icon"></div>
                     <div class="main_box_titles">Credits</div>
                 </div>
-                <div class="shows_box_mob">
+                <div class="shows_box_mob" onclick="shows_mob()">
                     <div class="shows_icon menu_icon"></div>
                     <div class="main_box_titles">Content</div>
                 </div>
-                <div class="settings_box_mob">
+                <div class="settings_box_mob" onclick="settings_mob()">
                     <div class="settings_icon menu_icon"></div>
                     <div class="main_box_titles">Settings</div>
+                </div>
+            </div>
+            <div class="credits_menu_mob menus_fade_out">
+                <div class="credits_menu_exit" onclick="credits_mob_close()">
+                    <div class="credits_menu_exit_svg menu_icon"></div>
+                    <div class="main_box_titles">Back</div>
+                </div>
+            </div>
+            <div class="mob_shows menus_fade_out">
+                <a href="video.html"><div class="mob_show_num1 mob_show_block"><div class="main_box_titles">Demon Slayer</div></div></a>
+                <div class="mob_show_num2 mob_show_block"></div>
+                <div class="mob_show_num3 mob_show_block"></div>
+                <div class="mob_show_num4 mob_show_block"></div>
+                <div class="mob_show_num5 mob_show_block"></div>
+                <div class="mob_show_num6 mob_show_block"></div>
+                <div class="mob_show_num7 mob_show_block"></div>
+                <div class="mob_show_num8 mob_show_block"></div>
+                <div class="mob_show_num9 mob_show_block" onclick="shows_mob_close()">
+                    <div class="credits_menu_exit_svg menu_icon"></div>
+                    <div class="main_box_titles">Back</div>
+                </div>
+            </div>
+            <div class="mob_settings menus_fade_out">
+                <div class="mob_show_num2 mob_show_block"></div>
+                <div class="mob_show_num3 mob_show_block"></div>
+                <div class="mob_show_num4 mob_show_block"></div>
+                <div class="mob_show_num5 mob_show_block"></div>
+                <div class="mob_show_num6 mob_show_block"></div>
+                <div class="mob_show_num7 mob_show_block"></div>
+                <div class="mob_show_num8 mob_show_block" onclick="settings_mob_close()">
+                    <div class="credits_menu_exit_svg menu_icon"></div>
+                    <div class="main_box_titles">Back</div>
                 </div>
             </div>
         </div>

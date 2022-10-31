@@ -197,3 +197,74 @@ function start_button_click_mobile() {
         document.querySelector(".mob_menus").classList.remove("menus_fade_out")
      }, 800);
 }
+function credits_mob() {
+    document.querySelector(".mob_menus").style.opacity = 1
+    document.querySelector(".mob_menus").classList.add("menus_fade_out")
+    document.querySelector(".mob_menus").classList.remove("menus_fade_in")
+
+    setTimeout(() => {
+        document.querySelector(".credits_menu_mob").style.display = "block"
+        document.querySelector(".credits_menu_mob").style.opacity = 0
+        document.querySelector(".credits_menu_mob").classList.add("menus_fade_in")
+        document.querySelector(".credits_menu_mob").classList.remove("menus_fade_out")
+    }, 800);
+}
+function credits_mob_close() {
+    document.querySelector(".credits_menu_mob").style.opacity = 1
+    document.querySelector(".credits_menu_mob").classList.add("menus_fade_out")
+    document.querySelector(".credits_menu_mob").classList.remove("menus_fade_in")
+    setTimeout(() => {  
+        document.querySelector(".credits_menu_mob").style.display = "none"
+        document.querySelector(".mob_menus").style.opacity = 0
+        document.querySelector(".mob_menus").classList.add("menus_fade_in")
+        document.querySelector(".mob_menus").classList.remove("menus_fade_out")
+     }, 800);
+}
+
+function shows_mob() {
+    document.querySelector(".mob_menus").style.opacity = 1
+    document.querySelector(".mob_menus").classList.add("menus_fade_out")
+    document.querySelector(".mob_menus").classList.remove("menus_fade_in")
+
+    setTimeout(() => {
+        document.querySelector(".mob_shows").style.display = "block"
+        document.querySelector(".mob_shows").style.opacity = 0
+        document.querySelector(".mob_shows").classList.add("menus_fade_in")
+        document.querySelector(".mob_shows").classList.remove("menus_fade_out")
+    }, 800);
+}
+function shows_mob_close() {
+    document.querySelector(".mob_shows").style.opacity = 1
+    document.querySelector(".mob_shows").classList.add("menus_fade_out")
+    document.querySelector(".mob_shows").classList.remove("menus_fade_in")
+    setTimeout(() => {  
+        document.querySelector(".mob_shows").style.display = "none"
+        document.querySelector(".mob_menus").style.opacity = 0
+        document.querySelector(".mob_menus").classList.add("menus_fade_in")
+        document.querySelector(".mob_menus").classList.remove("menus_fade_out")
+     }, 800);
+}
+
+function settings_mob() {
+    document.querySelector(".mob_menus").style.opacity = 1
+    document.querySelector(".mob_menus").classList.add("menus_fade_out")
+    document.querySelector(".mob_menus").classList.remove("menus_fade_in")
+
+    setTimeout(() => {
+        document.querySelector(".mob_settings").style.display = "block"
+        document.querySelector(".mob_settings").style.opacity = 0
+        document.querySelector(".mob_settings").classList.add("menus_fade_in")
+        document.querySelector(".mob_settings").classList.remove("menus_fade_out")
+    }, 800);
+}
+function settings_mob_close() {
+    document.querySelector(".mob_settings").style.opacity = 1
+    document.querySelector(".mob_settings").classList.add("menus_fade_out")
+    document.querySelector(".mob_settings").classList.remove("menus_fade_in")
+    setTimeout(() => {  
+        document.querySelector(".mob_settings").style.display = "none"
+        document.querySelector(".mob_menus").style.opacity = 0
+        document.querySelector(".mob_menus").classList.add("menus_fade_in")
+        document.querySelector(".mob_menus").classList.remove("menus_fade_out")
+     }, 800);
+}
