@@ -1,3 +1,4 @@
+// computer window js:
 var menu_loaded = false
 
 function start_button_click() {
@@ -185,4 +186,14 @@ function settings_click() {
         totalTime: 500,
         ease: linearEase
     })
+}
+
+// mobile window js:
+function start_button_click_mobile() {
+    document.querySelector("#mobile_start").classList.add("menus_fade_out")
+    setTimeout(() => {  
+        document.querySelector(".mob_menus").style.display = "block"
+        document.querySelector(".mob_menus").classList.add("menus_fade_in")
+        document.querySelector(".mob_menus").classList.remove("menus_fade_out")
+     }, 800);
 }
