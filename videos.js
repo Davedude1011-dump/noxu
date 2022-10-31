@@ -120,56 +120,161 @@ var demonSlayerTitles = [
     "No Matter How Many Times We Reborn",
 ]
 
+// SAO:
+
+var SAO = [
+    "12HsRhi_OQlrzsfpuCvPHp_nht93ebhTQ",
+    "1K-UwEnpEO1vmg-NA0UO6DebMD7t0iK85",
+    "1gxyLCGnQ6CnQncVs44CvAKqXF-Hfmz1L",
+    "195Bk7IGOIXsEqQ1jA5qwk3K7Ea_119S_",
+    "172jkNtI8eIDrMrjA3LEWX4O8l9lvmk8N",
+    "1Q6f43Ar9Qoz2-0wwen8U7lfr7A6LLDnl",
+    "1BAssASZUn5O41XhjOSMEHCe8CxlNmOE0",
+    "1o25AYKPIwUiworZuy8VIBR32eKD1bMMw",
+    "17P8XTDZatYpuS52KroUsZr0m-9l4ORhW",
+    "1w0EaCjyffOaFezBE-KZbJevHc2xprksy",
+    "14yMXjuK5ZGzlHg9qKTJ7FqfCgz9bpBsD",
+    "1mJ6jqShH72n0t77HNT666Ehx4lIuyYOC",
+    "1QdKiDn9bLn0ulwhohcrjJw3w1dlI85VI",
+    "17biuACbijdv698bOzTg_H_V9jzFdTX0c",
+    "1pvWzLSExxpvQfzaRHiWq99flLOYiEYgh",
+    "19ZQmV4WLHK1ga-Ow_dz4E57PX40ITplQ",
+    "1LLb-CtEtQsIEXwMBAjJiLuP957EWZTRg",
+    "1HaWBTAzEkrl6ikA-1nEVt263dcRAAvV-",
+    "1wO2W-kLr-3VWcRMGEOptyZRF5WKjZTtj",
+    "1cFDP5NTvYz33zYydSI-JHRTifOUKfWYc",
+    "19E4EiMqBBGnGCYgu89zZqnERgqCA2U-A",
+    "1Y6iT-yCeAsAjK9MxholQQECYppx0Gede",
+    "1ApFm2lPRY0PAchbCRS41IarAsenPIM6W",
+    "1wRZeWFjJeHAEdsw9Ouo07uaOdNYK70Du",
+    "1Y7sFtnhJxp8_9zPg7elv-sQ2EIgc0Lll"
+]
+var SAOnums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+    "S1 E13",
+    "S1 E14",
+    "S1 E15",
+    "S1 E16",
+    "S1 E17",
+    "S1 E18",
+    "S1 E19",
+    "S1 E20",
+    "S1 E21",
+    "S1 E22",
+    "S1 E23",
+    "S1 E24",
+    "S1 E25"
+]
+var SAOtitles = [
+    "The World of Swords",
+    "Beater",
+    "The Red-Nosed Reindeer",
+    "The Black Swordsman",
+    "A Crime Within the Walls",
+    "Illusionary Avenger",
+    "The Warmth of the Heart",
+    "Black and White Sword Dance",
+    "The Blue-Eyed Demon",
+    "Crimson Killing Intent",
+    "The Morning Dew Girl",
+    "Yui's Heart",
+    "The Depths of Hell",
+    "The End of the World",
+    "Return",
+    "The Land of Fairies",
+    "The Captive Queen",
+    "To the World Tree",
+    "The Lugru Corridor",
+    "General of the Blazing Flames",
+    "The Truth About ALfheim",
+    "Grand Quest",
+    "Bonds",
+    "Gilded Hero",
+    "The World Seed",
+]
+
 // --------------
 
-var show = "demonSlayer"
+var show = "SAO"
 var epNum = "1"
+var showCodes = ""
+var showNums = ""
+var showTitles = ""
+
+window.onload = function() {
+    var pickedShow = localStorage.getItem("chosenShow");
+    console.log(pickedShow)
+    if (pickedShow === "demonSlayer") {
+        showCodes = demonSlayer
+        showNums = demonSlayerNums
+        showTitles = demonSlayerTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/demonSlayerBig.png')"
+    }
+    else if (pickedShow === "SAO") {
+        showCodes = SAO
+        showNums = SAOnums
+        showTitles = SAOtitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
+    }
+    document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + showCodes[0] + "/preview"
+    document.querySelector(".episode_title").textContent = showTitles[0]
+    document.querySelector(".episode_num").textContent = showNums[0]
+}
 
 function nextEp() {
-    if (show === "demonSlayer") {
-        if (epNum <= demonSlayer.length-1) {
-            epNum ++
-            var epID = demonSlayer[epNum-1]
-            var epShowNum = demonSlayerNums[epNum-1]
-            var epTitle = demonSlayerTitles[epNum-1]
-            console.log(epID)
-            document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-            document.querySelector(".episode_num").textContent = epShowNum
-            document.querySelector(".episode_title").textContent = epTitle
-        }
-        else {
-            epNum = 1
-            var epID = demonSlayer[epNum-1]
-            var epShowNum = demonSlayerNums[epNum-1]
-            var epTitle = demonSlayerTitles[epNum-1]
-            console.log(epID)
-            document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-            document.querySelector(".episode_num").textContent = epShowNum
-            document.querySelector(".episode_title").textContent = epTitle
-        }
+    //leave this alone or else itle break :I
+    if (epNum <= showCodes.length-1) {
+        epNum ++
+        var epID = showCodes[epNum-1]
+        var epShowNum = showNums[epNum-1]
+        var epTitle = showTitles[epNum-1]
+        console.log(epID)
+        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
+    }
+    else {
+        epNum = 1
+        var epID = showCodes[epNum-1]
+        var epShowNum = showNums[epNum-1]
+        var epTitle = showTitles[epNum-1]
+        console.log(epID)
+        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
 }
 function prevEp() {
-    if (show === "demonSlayer") {
-        if (epNum > 1) {
-            epNum -= 1
-            var epID = demonSlayer[epNum-1]
-            var epShowNum = demonSlayerNums[epNum-1]
-            var epTitle = demonSlayerTitles[epNum-1]
-            console.log(epID)
-            document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-            document.querySelector(".episode_num").textContent = epShowNum
-            document.querySelector(".episode_title").textContent = epTitle
-        }
-        else {
-            epNum = demonSlayer.length
-            var epID = demonSlayer[epNum-1]
-            var epShowNum = demonSlayerNums[epNum-1]
-            var epTitle = demonSlayerTitles[epNum-1]
-            console.log(epID)
-            document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-            document.querySelector(".episode_num").textContent = epShowNum
-            document.querySelector(".episode_title").textContent = epTitle
-        }
+    //leave this alone or else itle break :I
+    if (epNum > 1) {
+        epNum -= 1
+        var epID = showCodes[epNum-1]
+        var epShowNum = showNums[epNum-1]
+        var epTitle = showTitles[epNum-1]
+        console.log(epID)
+        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
+    }
+    else {
+        epNum = showCodes.length
+        var epID = showCodes[epNum-1]
+        var epShowNum = showNums[epNum-1]
+        var epTitle = showTitles[epNum-1]
+        console.log(epID)
+        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
 }

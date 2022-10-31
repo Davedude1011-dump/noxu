@@ -197,6 +197,10 @@ body {
     }
 }
 
+.credits_hidden_menu, .settings_hidden_menu {
+    display: none
+}
+
 .shows_menu_inner {
     position: absolute;
     left: calc(20vw + 40px + 3% + 100px + 95px + 15px + 20vw + 50px + 50px);

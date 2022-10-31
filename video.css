@@ -7,10 +7,6 @@
     --anti-color: black;
 }
 
-html {
-    cursor: url("images/logo_32x32.png") 16 16, auto;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +69,6 @@ body {
 
 .show_profile_pic {
     position: absolute;
-    background-image: url("images/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -124,13 +119,14 @@ body {
 .fullscreen_switch_button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: calc(45vh + 230px);
     translate: -50% -50%;
-    height: 30px;
+    height: 35px;
     aspect-ratio: 1/1;
     background-color: var(--main-color);
     border-radius: 5px;
     z-index: 999;
+    background-color: var(--sub-color);
 }
 .fullscreen_button_icon {
     position: absolute;
@@ -184,7 +180,6 @@ body {
     }
     .show_profile_pic {
         position: absolute;
-        background-image: url("images/logo.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

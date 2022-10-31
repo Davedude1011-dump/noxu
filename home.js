@@ -59,6 +59,8 @@ function animateTo(settings) {
 
 
 function credits_click() {
+    document.querySelector(".credits_hidden_menu").style.display = "block"
+
     document.querySelector(".credits_box_outer").style.animation = "fade_in 0.5s forwards"
     document.querySelector(".shows_box_outer").style.animation = "fade_out 0.5s forwards"
     document.querySelector(".settings_box_outer").style.animation = "fade_out 0.5s forwards"
@@ -78,6 +80,11 @@ function credits_click() {
     document.querySelector(".settings_hidden_menu").style.opacity = "1"
     document.querySelector(".settings_hidden_menu").classList.add("menus_fade_out");
     document.querySelector(".settings_hidden_menu").classList.remove("menus_fade_in");
+
+    setTimeout(() => {
+        document.querySelector(".settings_hidden_menu").style.display = "none"
+        document.querySelector(".shows_hidden_menu").style.display = "none"
+    }, 200);
 
     animateTo({
         element: document.querySelector(".credits_box_outer"), 
@@ -102,6 +109,8 @@ function credits_click() {
     })
 }
 function shows_click() {
+    document.querySelector(".shows_hidden_menu").style.display = "block"
+
     document.querySelector(".credits_box_outer").style.animation = "fade_out 0.5s forwards"
     document.querySelector(".shows_box_outer").style.animation = "fade_in 0.5s forwards"
     document.querySelector(".settings_box_outer").style.animation = "fade_out 0.5s forwards"
@@ -121,6 +130,11 @@ function shows_click() {
     document.querySelector(".settings_hidden_menu").style.opacity = "1"
     document.querySelector(".settings_hidden_menu").classList.add("menus_fade_out");
     document.querySelector(".settings_hidden_menu").classList.remove("menus_fade_in");
+
+    setTimeout(() => {
+        document.querySelector(".credits_hidden_menu").style.display = "none"
+        document.querySelector(".settings_hidden_menu").style.display = "none"
+    }, 200);
     
     animateTo({
         element: document.querySelector(".credits_box_outer"), 
@@ -145,6 +159,8 @@ function shows_click() {
     })
 }
 function settings_click() {
+    document.querySelector(".settings_hidden_menu").style.display = "block"
+    
     document.querySelector(".credits_box_outer").style.animation = "fade_out 0.5s forwards"
     document.querySelector(".shows_box_outer").style.animation = "fade_out 0.5s forwards"
     document.querySelector(".settings_box_outer").style.animation = "fade_in 0.5s forwards"
@@ -164,6 +180,11 @@ function settings_click() {
     document.querySelector(".settings_hidden_menu").style.opacity = "0"
     document.querySelector(".settings_hidden_menu").classList.remove("menus_fade_out");
     document.querySelector(".settings_hidden_menu").classList.add("menus_fade_in");
+
+    setTimeout(() => {
+        document.querySelector(".credits_hidden_menu").style.display = "none"
+        document.querySelector(".shows_hidden_menu").style.display = "none"
+    }, 200);
     
     animateTo({
         element: document.querySelector(".credits_box_outer"), 
@@ -267,4 +288,12 @@ function settings_mob_close() {
         document.querySelector(".mob_menus").classList.add("menus_fade_in")
         document.querySelector(".mob_menus").classList.remove("menus_fade_out")
      }, 800);
+}
+
+
+
+
+function pickShow(ID) {
+    var pickedShow = ID
+    localStorage.setItem("chosenShow", pickedShow); 
 }
