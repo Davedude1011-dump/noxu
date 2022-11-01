@@ -227,7 +227,7 @@ window.onload = function() {
         showTitles = SAOtitles
         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
     }
-    document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + showCodes[0] + "/preview"
+    document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
     document.querySelector(".episode_title").textContent = showTitles[0]
     document.querySelector(".episode_num").textContent = showNums[0]
 }
@@ -240,7 +240,7 @@ function nextEp() {
         var epShowNum = showNums[epNum-1]
         var epTitle = showTitles[epNum-1]
         console.log(epID)
-        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
         document.querySelector(".episode_num").textContent = epShowNum
         document.querySelector(".episode_title").textContent = epTitle
     }
@@ -250,7 +250,7 @@ function nextEp() {
         var epShowNum = showNums[epNum-1]
         var epTitle = showTitles[epNum-1]
         console.log(epID)
-        document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
+        document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
         document.querySelector(".episode_num").textContent = epShowNum
         document.querySelector(".episode_title").textContent = epTitle
     }
