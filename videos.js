@@ -208,29 +208,29 @@ var SAOtitles = [
 
 var show = "SAO"
 var epNum = "1"
-var showCodes = demonSlayer
-var showNums = demonSlayerNums
-var showTitles = demonSlayerTitles
+var showCodes = ""
+var showNums = ""
+var showTitles = ""
 
-// window.onload = function() {
-//     var pickedShow = localStorage.getItem("chosenShow");
-//     console.log(pickedShow)
-//     if (pickedShow === "demonSlayer") {
-//         showCodes = demonSlayer
-//         showNums = demonSlayerNums
-//         showTitles = demonSlayerTitles
-//         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/demonSlayerBig.png')"
-//     }
-//     else if (pickedShow === "SAO") {
-//         showCodes = SAO
-//         showNums = SAOnums
-//         showTitles = SAOtitles
-//         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
-//     }
-//     document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
-//     document.querySelector(".episode_title").textContent = showTitles[0]
-//     document.querySelector(".episode_num").textContent = showNums[0]
-// }
+window.onload = function() {
+    var pickedShow = localStorage.getItem("chosenShow");
+    console.log(pickedShow)
+    if (pickedShow === "demonSlayer") {
+        showCodes = demonSlayer
+        showNums = demonSlayerNums
+        showTitles = demonSlayerTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/demonSlayerBig.png')"
+    }
+    else if (pickedShow === "SAO") {
+        showCodes = SAO
+        showNums = SAOnums
+        showTitles = SAOtitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
+    }
+    document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
+    document.querySelector(".episode_title").textContent = showTitles[0]
+    document.querySelector(".episode_num").textContent = showNums[0]
+}
 
 function nextEp() {
     //leave this alone or else itle break :I
@@ -241,8 +241,8 @@ function nextEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = sessionStorage.getItem("chosenShow")
-        document.querySelector(".episode_title").textContent = sessionStorage.getItem("chosenShow")
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
     else {
         epNum = 1
@@ -251,8 +251,8 @@ function nextEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = sessionStorage.getItem("chosenShow")
-        document.querySelector(".episode_title").textContent = sessionStorage.getItem("chosenShow")
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
 }
 function prevEp() {
@@ -264,8 +264,8 @@ function prevEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = sessionStorage.getItem("chosenShow")
-        document.querySelector(".episode_title").textContent = sessionStorage.getItem("chosenShow")
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
     else {
         epNum = showCodes.length
@@ -274,7 +274,7 @@ function prevEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = sessionStorage.getItem("chosenShow")
-        document.querySelector(".episode_title").textContent = sessionStorage.getItem("chosenShow")
+        document.querySelector(".episode_num").textContent = epShowNum
+        document.querySelector(".episode_title").textContent = epTitle
     }
 }
