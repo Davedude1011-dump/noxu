@@ -9,6 +9,55 @@ body {
     background-color: gray;
 }
 
+@media screen and (max-height: 650px) {
+    .mob_show_block {
+        position: absolute;
+        left: 50%;
+        width: 60vw;
+        height: 35px;
+        background-color: white;
+        translate: -50% -50%;
+    }
+    .main_box_titles {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        top: 50%;
+        translate: 0 -50%;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: Inika;
+        pointer-events: none;
+        text-decoration: none;
+        color: black
+    }
+}
+@media screen and (min-height: 650px) {
+    .mob_show_block {
+        position: absolute;
+        left: 50%;
+        width: 60vw;
+        height: 60px;
+        background-color: white;
+        translate: -50% -50%;
+    }
+    .main_box_titles {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        top: 50%;
+        translate: 0 -50%;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: Inika;
+        pointer-events: none;
+        text-decoration: none;
+        color: black
+    }
+}
+
 .start_button_outer {
     position: absolute;
     left: 50%;
@@ -274,7 +323,6 @@ body {
     height: fit-content;
     top: 50%;
     translate: 0 -50%;
-    font-size: 30px;
     font-weight: bold;
     font-family: Inika;
     pointer-events: none;
@@ -367,7 +415,6 @@ body {
     position: absolute;
     left: 50%;
     width: 60vw;
-    height: 60px;
     background-color: white;
     translate: -50% -50%;
 }
