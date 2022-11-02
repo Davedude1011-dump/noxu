@@ -297,3 +297,8 @@ function pickShow(ID) {
     var pickedShow = ID
     localStorage.setItem("chosenShow", pickedShow); 
 }
+
+
+window.onload = function() {
+    document.querySelector(".video_screen").src= " https://docs.google.com/file/d/12HsRhi_OQlrzsfpuCvPHp_nht93ebhTQ/preview"
+}
