@@ -1,9 +1,3 @@
-
-window.onload = function() {
-    document.querySelector(".video_screen").src= "https://docs.google.com/file/d/12HsRhi_OQlrzsfpuCvPHp_nht93ebhTQ/preview"
-    document.querySelector("body").style.backgroundColor = "black"
-}
-
 // computer window js:
 var menu_loaded = false
 

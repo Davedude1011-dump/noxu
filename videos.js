@@ -208,29 +208,29 @@ var SAOtitles = [
 
 var show = "SAO"
 var epNum = "1"
-var showCodes = ""
-var showNums = ""
-var showTitles = ""
+var showCodes = "SAO"
+var showNums = "SAOnums"
+var showTitles = "SAOtitles"
 
-window.onload = function() {
-    var pickedShow = localStorage.getItem("chosenShow");
-    console.log(pickedShow)
-    if (pickedShow === "demonSlayer") {
-        showCodes = demonSlayer
-        showNums = demonSlayerNums
-        showTitles = demonSlayerTitles
-        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/demonSlayerBig.png')"
-    }
-    else if (pickedShow === "SAO") {
-        showCodes = SAO
-        showNums = SAOnums
-        showTitles = SAOtitles
-        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
-    }
-    document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
-    document.querySelector(".episode_title").textContent = showTitles[0]
-    document.querySelector(".episode_num").textContent = showNums[0]
-}
+// window.onload = function() {
+//     var pickedShow = localStorage.getItem("chosenShow");
+//     console.log(pickedShow)
+//     if (pickedShow === "demonSlayer") {
+//         showCodes = demonSlayer
+//         showNums = demonSlayerNums
+//         showTitles = demonSlayerTitles
+//         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/demonSlayerBig.png')"
+//     }
+//     else if (pickedShow === "SAO") {
+//         showCodes = SAO
+//         showNums = SAOnums
+//         showTitles = SAOtitles
+//         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
+//     }
+//     document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
+//     document.querySelector(".episode_title").textContent = showTitles[0]
+//     document.querySelector(".episode_num").textContent = showNums[0]
+// }
 
 function nextEp() {
     //leave this alone or else itle break :I
