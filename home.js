@@ -289,3 +289,11 @@ function settings_mob_close() {
         document.querySelector(".mob_menus").classList.remove("menus_fade_out")
      }, 800);
 }
+
+
+
+
+function pickShow(ID) {
+    var pickedShow = ID
+    sessionStorage.setItem("chosenShow", pickedShow);
+}
