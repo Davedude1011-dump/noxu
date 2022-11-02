@@ -208,9 +208,9 @@ var SAOtitles = [
 
 var show = "SAO"
 var epNum = "1"
-var showCodes = "SAO"
-var showNums = "SAOnums"
-var showTitles = "SAOtitles"
+var showCodes = SAO
+var showNums = SAOnums
+var showTitles = SAOtitles
 
 // window.onload = function() {
 //     var pickedShow = localStorage.getItem("chosenShow");
