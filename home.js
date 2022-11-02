@@ -1,3 +1,9 @@
+
+window.onload = function() {
+    document.querySelector(".video_screen").src= "https://docs.google.com/file/d/12HsRhi_OQlrzsfpuCvPHp_nht93ebhTQ/preview"
+    document.querySelector("body").style.backgroundColor = "black"
+}
+
 // computer window js:
 var menu_loaded = false
 
@@ -296,9 +302,4 @@ function settings_mob_close() {
 function pickShow(ID) {
     var pickedShow = ID
     localStorage.setItem("chosenShow", pickedShow); 
-}
-
-
-window.onload = function() {
-    document.querySelector(".video_screen").src= " https://docs.google.com/file/d/12HsRhi_OQlrzsfpuCvPHp_nht93ebhTQ/preview"
 }
