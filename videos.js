@@ -241,8 +241,8 @@ function nextEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = epShowNum
-        document.querySelector(".episode_title").textContent = epTitle
+        document.querySelector(".episode_num").textContent = localStorage.getItem("chosenShow")
+        document.querySelector(".episode_title").textContent = localStorage.getItem("chosenShow")
     }
     else {
         epNum = 1
@@ -251,8 +251,8 @@ function nextEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = epShowNum
-        document.querySelector(".episode_title").textContent = epTitle
+        document.querySelector(".episode_num").textContent = localStorage.getItem("chosenShow")
+        document.querySelector(".episode_title").textContent = localStorage.getItem("chosenShow")
     }
 }
 function prevEp() {
@@ -264,8 +264,8 @@ function prevEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = epShowNum
-        document.querySelector(".episode_title").textContent = epTitle
+        document.querySelector(".episode_num").textContent = localStorage.getItem("chosenShow")
+        document.querySelector(".episode_title").textContent = localStorage.getItem("chosenShow")
     }
     else {
         epNum = showCodes.length
@@ -274,7 +274,7 @@ function prevEp() {
         var epTitle = showTitles[epNum-1]
         console.log(epID)
         document.querySelector(".video_screen").src = "https://drive.google.com/file/d/" + epID + "/preview"
-        document.querySelector(".episode_num").textContent = epShowNum
-        document.querySelector(".episode_title").textContent = epTitle
+        document.querySelector(".episode_num").textContent = localStorage.getItem("chosenShow")
+        document.querySelector(".episode_title").textContent = localStorage.getItem("chosenShow")
     }
 }

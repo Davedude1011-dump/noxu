@@ -295,5 +295,5 @@ function settings_mob_close() {
 
 function pickShow(ID) {
     var pickedShow = ID
-    localStorage.setItem("chosenShow", pickedShow); 
+    localStorage.setItem("chosenShow", pickedShow);
 }
