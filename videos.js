@@ -204,6 +204,199 @@ var SAOtitles = [
     "The World Seed",
 ]
 
+// IWTPUGIAD:
+
+var IIW = [
+    "1wV6nRlppO_qmK_XzvIEkRm5gBjP_lF_2",
+    "10vlhGvAfvfyMoTMyDupCbc_wlYcfWr4I",
+    "1vgFMpJgGki6RIVc7AXgfsbRgvD59fBvn",
+    "1zsc5VWf6KiRmFk1LFb7HRmSFq4dGoBKB",
+    "1MyV2HoUtS4b2th_5HhOY6RelApToypI0",
+    "1QquJe79zuk-UWZPPeYm7BESfuCP0MtpE",
+    "1-8_YmPmeyGFdv1C6rsP0Sagk3Q0O7kQp",
+    "1BgKX9KqVAUt3n7Szl9bcxRkNxRE3e-4_",
+    "1b20efPLmkW-cDfuA-OW4TjPWJwvmuKVH",
+    "1lhD1_UuzEdZWeOfbt3vKTocDp-yo2v5y",
+    "1mhwnSScGJ2dMI3rBeqk63IcqnDlYKBJT",
+    "1Fraog5_s3mzCEVzRj50eh3bgEwDqTfvM",
+    "1r8DIYQhM2ttm3oqQsUVu-kKqvJqqvaNj",
+
+    "1dupxb1JUxsk0b0mh0L3LEzM0DdjxsQE-",
+    "1z3r1sEc33sEm_ApDzLeINdn_vorZm9XY",
+    "1QJj12NInmtH21d_MXbVVhJpdXTK-I201",
+    "1DRJLFpwBaIFC0opd1tC3ojGeC09ATtjx",
+    "1ZMs9xZfJVL5zyJhi8lCiIA6USchjPaxO",
+    "12FG30JHAi3z3BR6aZ0Xvb2Zr-bbWWW_d",
+    "1mhQ7fPFF2NokhoviArQuC7_g5RhPofNg",
+    "1buUYVdcMj0COupuEFCI0aovQeUIdBSLs",
+    "1MOBcVGAZ2pJEuBJfrdumapV8KNY6-0RL",
+    "1x9wrOuvhQbmMVdWMaNHYEcWU0fwqudqo",
+    "1wTYKvBT8br3brBZdyBI7UglRWRAqCjCq",
+    "1gxyd046Q0Vj-COCz7oNQ2dUZAkJz3FEz",
+
+    "1DsNd2Rd17aNiOj7t5jAdZYzEu--RdpiG",
+    "1UIGVONq-OT4l5DtubfszaK14j4ZZALBy",
+    "1ouvmJ3WeDwrZCQlt7rvbzU5-Ak_otVB8",
+    "1py3WmpsJKwpJs8hWs1HKcMyCjEE6bmGg",
+    "1Cbjqy7U5vx8PEWOwdpjrb0CulclZcAA3",
+    "1QclY1nhRpACkC2Bml41i0vFXqDsK7joa",
+    "1dkwpWoH1vre28FBThUzpDAgqwbFWfzAu",
+    "1-qGdQJvJemRpnTZCrn9rSz38LGifvYaK",
+    "1SVHbI5J_3dvR4Ot6rYC9fNOjEZkEpnTn",
+    "1UKhZvTUG9FSER71J3yCA5xyjDfncyl91",
+    "16GcxngEPpkkXLiclrbVoDQOJ9CFATM3K",
+    "1KyK9ja0EmB6plpdpJLbCeSKRx6BveD84",
+
+    "1L6emUSqtjjQY3BfGhRdFd0ItE2DAKRq0",
+    "1RbaWz83FPwcePAyX9QE0pm1MTtYDE_Na",
+    "111ThNlh4u7AQvze6jJ4_F9lJIUMd3E-T",
+    "1WMP5VWu_O1G4XX3X8yedKCXqTwDHBY-6",
+    "1F1B8QpbNYg6puCLzITapluXS5QG4LUAd",
+]
+
+var IIWnums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+    "S1 E13",
+
+    "S2 E1",
+    "S2 E2",
+    "S2 E3",
+    "S2 E4",
+    "S2 E5",
+    "S2 E6",
+    "S2 E7",
+    "S2 E8",
+    "S2 E9",
+    "S2 E10",
+    "S2 E11",
+    "S2 E12",
+
+    "S3 E1",
+    "S3 E2",
+    "S3 E3",
+    "S3 E4",
+    "S3 E5",
+    "S3 E6",
+    "S3 E7",
+    "S3 E8",
+    "S3 E9",
+    "S3 E10",
+    "S3 E11",
+    "S3 E12",
+
+    "S4 E1",
+    "S4 E2",
+    "S4 E3",
+    "S4 E4",
+    "S4 E5",
+]
+
+var IIWtitles = [
+    "Adventurer (Bell Cranel)",
+    "Monster Festival (Monsterphilia)",
+    "The Blade of a God (Hestia Knife)",
+    "The Weak (Supporter)",
+    "Magic Book (Grimoire)",
+    "Reason (Liliruca Arde)",
+    "Sword Princess (Ais Wallenstein)",
+    "Wanting To Be A Hero (Argonaut)",
+    "Blacksmith (Welf Crozzo)",
+    "Procession of Monsters (Pass Parade)",
+    "Labyrinth Utopia (Under Resort)",
+    "Evil Intentions (Show)",
+    "The Story of a Familia (Familia Myth)",
+    
+    "Banquet of the Gods (Party)",
+    "Sun God (Apollo)",
+    "Gathering (Conversion)",
+    "War Game (War Game)",
+    "The Hearthfire Mansion (Home)",
+    "City of Lust (Ishtar Familia)",
+    "Fox Person (Renard)",
+    "Killing Stone (Ephemeral Dreams)",
+    "War Prostitutes (Berbera)",
+    "Longing to Be a Hero (Argonaut)",
+    "Army's Advance (Rakia)",
+    "Goddess and Child (Song of Love)",
+    
+    "Wiene (Dragon's Daughter)",
+    "Monster (One Wing)",
+    "Xenos (Outliers)",
+    "Aspiration (Distant Dream)",
+    "Ikelos Familia (King of Atrocity)",
+    "Knossos (Man-Made Labyrinth)",
+    "Dix Perdix (The Dreams of Beasts)",
+    "Bell Cranel (The Fool)",
+    "Stigma (Downfall)",
+    "Invisible (Forced Breakthrough)",
+    "Ultra Soul (Decisive Battle)",
+    "Argonaut (Hero's Return)",
+    
+    "Prelude (Night Before Departure)",
+    "The Great Falls (The Great Falls)",
+    "Parasite (Viscum Album)",
+    "Mermaid (The Girl of Water City)",
+    "Argo Vesta (Heroic Slash of Holy Flame)",
+]
+
+// gun gale online:
+
+var GGO = [
+    "1LJ7Jyw8I-YGaY4jJc45RvZGQsyDXUdDU",
+    "1nqlHDLpjnBtjs6ll1GQ8Z_R_wJEUz0YV",
+    "1kJmFZjCoQuza6x387VLIkX57nGMxnCKR",
+    "1STffU_9QFk349J1cl65f5Sdk9t-R9wzO",
+    "1h0QQZSYg-zsl23k9bAVpdNaFV4CgNkJv",
+    "1fpFhy-Sc11_C6kAZe5bkkwVEDfWAZ9F2",
+    "1FQKhg_vRI3kdG9C64PweXL7Oe72Y_yoA",
+    "1HoMjfxCaktAHVU23oVUBmamenFCOCmNZ",
+    "1vcEgQsrIAwsoOgLOW-4nApevz8B1v7cg",
+    "1CEEsml7YDFj1RpiTAXuj9y-VAhkuBUq2",
+    "1SZ4OWLttGo4ELSg2hcChuOz8OO65UQsi",
+    "1LJ7Jyw8I-YGaY4jJc45RvZGQsyDXUdDU",
+]
+
+var GGOnums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+]
+
+var GGOtitles = [
+    "Squad Jam",
+    "GGO",
+    "Fan Letter",
+    "Death Game",
+    "Leave the Last Battle to Me",
+    "SAO Loser",
+    "Second Squad Jam",
+    "Booby Trap",
+    "Ten Minute Massacre",
+    "The Devil's Comeback",
+    "Psycho Llenn",
+    "Applause",
+]
+
 // --------------
 
 var show = "SAO"
@@ -227,9 +420,22 @@ window.onload = function() {
         showTitles = SAOtitles
         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/SAObig.png')"
     }
+    else if (pickedShow === "IWTPUGIAD") {
+        showCodes = IIW
+        showNums = IIWnums
+        showTitles = IIWtitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/IIW.png')"
+    }
+    else if (pickedShow === "GGO") {
+        showCodes = GGO
+        showNums = GGOnums
+        showTitles = GGOtitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/GGO.png')"
+    }
     document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
     document.querySelector(".episode_title").textContent = showTitles[0]
     document.querySelector(".episode_num").textContent = showNums[0]
+    console.log(pickedShow)
 }
 
 function nextEp() {

@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.shows_hidden_menu_2 {
+    display: none;
+}
+
 body {
     background-color: gray;
 }
@@ -32,6 +36,20 @@ body {
         text-decoration: none;
         color: black
     }
+    .main_box_titles_high {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        top: 50%;
+        translate: 0 -50%;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: Inika;
+        pointer-events: none;
+        text-decoration: none;
+        color: rgb(0, 193, 132)
+    }
 }
 @media screen and (min-height: 650px) {
     .mob_show_block {
@@ -55,6 +73,20 @@ body {
         pointer-events: none;
         text-decoration: none;
         color: black
+    }
+    .main_box_titles_high {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        top: 50%;
+        translate: 0 -50%;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: Inika;
+        pointer-events: none;
+        text-decoration: none;
+        color: rgb(0, 193, 132)
     }
 }
 
@@ -329,6 +361,19 @@ body {
     text-decoration: none;
     color: black
 }
+.main_box_titles_high {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    top: 50%;
+    translate: 0 -50%;
+    font-weight: bold;
+    font-family: Inika;
+    pointer-events: none;
+    text-decoration: none;
+    color: rgb(0, 193, 132)
+}
 
 .computer_window {
     display: none;
@@ -407,7 +452,7 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='202' height='202' viewBox='0 0 202 202' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100.999 0C45.22 0 0.000751495 45.2199 0.000751495 100.999C0.000751495 156.776 45.2193 202 100.998 202C156.776 202 201.999 156.776 201.999 100.999C201.999 45.2199 156.777 0 100.999 0ZM127.411 146.921C125.569 148.762 123.155 149.683 120.744 149.683C118.332 149.683 115.917 148.762 114.076 146.92L76.1715 109.017C75.6072 108.655 75.0679 108.24 74.5771 107.747C72.6944 105.862 71.7861 103.385 71.8319 100.917C71.7881 98.4478 72.6944 95.9679 74.5771 94.0853C75.0713 93.5931 75.6072 93.177 76.1715 92.8154L113.907 55.0801C117.59 51.4004 123.562 51.3991 127.244 55.0822C130.927 58.7632 130.927 64.7343 127.244 68.4194L94.7459 100.918L127.412 133.585C131.093 137.267 131.093 143.238 127.411 146.921Z' fill='%23808080'/%3E%3C/svg%3E%0A");
 }
 
-.mob_shows, .mob_settings {
+.mob_shows, .mob_shows_2, .mob_settings {
     display: none;
 }
 

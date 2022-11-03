@@ -290,10 +290,72 @@ function settings_mob_close() {
      }, 800);
 }
 
+var shows_page = 1
+function mob_shows_next() {
+    if (shows_page === 1) {
+        document.querySelector(".mob_shows").style.opacity = 1
+        document.querySelector(".mob_shows").classList.add("menus_fade_out")
+        document.querySelector(".mob_shows").classList.remove("menus_fade_in")
+        setTimeout(() => {  
+        document.querySelector(".mob_shows_2").style.display = "block"
+            document.querySelector(".mob_shows").style.display = "none"
+            document.querySelector(".mob_shows_2").style.opacity = 0
+            document.querySelector(".mob_shows_2").classList.add("menus_fade_in")
+            document.querySelector(".mob_shows_2").classList.remove("menus_fade_out")
+         }, 800);
+    }
+    shows_page ++
+}
+function mob_shows_prev() {
+    if (shows_page === 2) {
+        document.querySelector(".mob_shows_2").style.opacity = 1
+        document.querySelector(".mob_shows_2").classList.add("menus_fade_out")
+        document.querySelector(".mob_shows_2").classList.remove("menus_fade_in")
+        setTimeout(() => {
+            document.querySelector(".mob_shows").style.display = "block"
+            document.querySelector(".mob_shows_2").style.display = "none"
+            document.querySelector(".mob_shows").style.opacity = 0
+            document.querySelector(".mob_shows").classList.add("menus_fade_in")
+            document.querySelector(".mob_shows").classList.remove("menus_fade_out")
+         }, 800);
+    }
+    shows_page -= 1
+}
 
+function shows_next() {
+    if (shows_page === 1) {
+        document.querySelector(".shows_hidden_menu").style.opacity = 1
+        document.querySelector(".shows_hidden_menu").classList.add("menus_fade_out")
+        document.querySelector(".shows_hidden_menu").classList.remove("menus_fade_in")
+        setTimeout(() => {  
+            document.querySelector(".shows_hidden_menu_2").style.display = "block"
+            document.querySelector(".shows_hidden_menu").style.display = "none"
+            document.querySelector(".shows_hidden_menu_2").style.opacity = 0
+            document.querySelector(".shows_hidden_menu_2").classList.add("menus_fade_in")
+            document.querySelector(".shows_hidden_menu_2").classList.remove("menus_fade_out")
+         }, 800);
+    }
+    shows_page ++
+}
+function shows_prev() {
+    if (shows_page === 2) {
+        document.querySelector(".shows_hidden_menu_2").style.opacity = 1
+        document.querySelector(".shows_hidden_menu_2").classList.add("menus_fade_out")
+        document.querySelector(".shows_hidden_menu_2").classList.remove("menus_fade_in")
+        setTimeout(() => {  
+        document.querySelector(".shows_hidden_menu").style.display = "block"
+            document.querySelector(".shows_hidden_menu_2").style.display = "none"
+            document.querySelector(".shows_hidden_menu").style.opacity = 0
+            document.querySelector(".shows_hidden_menu").classList.add("menus_fade_in")
+            document.querySelector(".shows_hidden_menu").classList.remove("menus_fade_out")
+         }, 800);
+    }
+    shows_page -= 1
+}
 
 
 function pickShow(ID) {
     var pickedShow = ID
+    console.log(pickedShow)
     localStorage.setItem("chosenShow", pickedShow); 
 }
