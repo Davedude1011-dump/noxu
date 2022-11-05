@@ -397,6 +397,293 @@ var GGOtitles = [
     "Applause",
 ]
 
+// guilty crown:
+
+var guiltyCrown = [
+    "11b-7I1VeyRhb3fh46NRVYScSbTvJz8q5",
+    "1Wj9CmV0SvGQV1PqF_If68MHNQwsPFrrR",
+    "1X8hpdrV89fUpJ8afU7miKABuIeqCQr0Q",
+    "1CQdhe2ieou3tzIIy96i6su-bE-nMPCDR",
+    "1CBCh_SidRxdspMft_fUFBM9hEp-9nhU-",
+    "17fuV1X98DCl2ux88CasS4fn5fq9V_syF",
+    "1UbjT8p1m3O4efs4C33xasNCeUOg7_P4y",
+    "15xx_DztjqJUBzvSw1AdjQT4eGn-BqSeX",
+    "1rNCNim65T4wtX7lcLx98-SJw_6Xeyt_e",
+    "1iqoqwSGI7aVyse1p84oos1hg15oB6vv9",
+    "1iCpbhYyRVdGabgbEdG2OJJnzfHokZQ-z",
+    "1L41C-FyhtT4rfSj0F1v7sPYMnAWbo44I",
+    "1hhYBZ8YCXXRISyQyk6YtlWkyPwRKrwew",
+    "1tNPAy92-arFSffhvtteTySZ5A2q0kmTC",
+    "14lTed3ntmRBD93AJkdquw8aNZs7JrEon",
+    "1aH_UmIff9U_JpRWOf3ohjIrMI7l_9l2d",
+    "10WylAWUwgngvhtOpJBNd7oh177bNTcQj",
+    "1JYYAbxUDIovTVTDAsj5jgo_KPVPpokmv",
+    "1EXcKGJ_dMtF8Ypev2OkTcFumGnErb7EA",
+    "1RwIUENWK5Q06f6XNb7tGJxbv30NZgTcW",
+    "1Mad7cvB8y55iyuahPRJ5RCREiE96CIk6",
+    "1gZmoG4FVBDAJBswPyeLVunpkdeiquhZ3"
+]
+
+var guiltyCrownNums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+    "S1 E13",
+    "S1 E14",
+    "S1 E15",
+    "S1 E16",
+    "S1 E17",
+    "S1 E18",
+    "S1 E19",
+    "S1 E20",
+    "S1 E21",
+    "S1 E22"
+]
+
+var guiltyCrownTitles = [
+    "Genesis",
+    "Survival of the Fittest",
+    "Void-Sampling",
+    "Flux",
+    "A Preparation",
+    "Leukocytes",
+    "Temptation",
+    "Courtship Behavior",
+    "Prey",
+    "Retraction",
+    "Resonance",
+    "The Lost Christmas",
+    "Isolation",
+    "Election",
+    "Sacrifice",
+    "The Tyrant",
+    "Exodus",
+    "Dear …",
+    "Rebirth",
+    "A Diary",
+    "Emergence",
+    "Convergence"
+]
+
+// 7 deadly sins
+
+var sevenDeadlySins = [
+    "1bjUAxW7NVOyzTGsyQzM3CiN1sQDLUOhC",
+    "11ZlOvkwZdJv9h-SkKTVKhCSaCJ3Tsane",
+    "1xuJe2H_32WpmiZAOlv1FJOtkaeaSzNG5",
+    "1tSS8NMRj8NlOM4yHQTPlgLL2fGVsSjTT",
+    "1jSuyDTrE24f5dwNTIRL7QmlA5rLERuhy",
+    "1Ssob-BVCiid0aMf6rJ0Cj2Jfsc6py5gf",
+    "1xC8GG3sR8kWT7zQtaYU-GQiR-3XYVFG1",
+    "1428zNqiok37RlydIciHQ_qNY3f69QCSk",
+    "1WSog3bIGzUow2cfvSKBvZBJCmtVoH7MU",
+    "1rShQjrvwgjgxm--mOv2r_0fOiwh-6tI3",
+    "1hxjjrw-j8YFZg7q4WM6mUocGeWrig3v0",
+    "1V8ICJ5zlhKdHtMHVa7GepiPb8piCU6Qw",
+    "1MbUxgAwCe-XDqYC5viaVyeppBF2q3u79",
+    "1HwZnhR-sJ-WUfoRhf9RJqGQfSWfDAlhT",
+    "1l_I-YRngo2Z8-Bd5n3cArVP7mRduWkoc",
+    "12LZTcpOSabpmmIV8oSI5wo8gxhg0036e",
+    "1EMbWhfCdKdeH2K5xnjdYBrazhHORxdvN",
+    "1oy5msX_OhuVja5_nXMQBfkQsXmMTjr6c",
+    "1MDvysQ5NmTizjDmqxoGJBwxkDIfMzKeW",
+    "1xX6zKyU-fRGvCou9HYtaSf4nz4-48XIC",
+    "1OKFHqXAZBMF7JO85sozFWsd2eX_-H25m",
+    "1gSQd9JKGEoQ3Tcej6SAz8FZwO9A6xtTi",
+    "1HB9AYCYWAUJL-q0ZBOO48vYGdjAAHPVr",
+    "16DTfDGvlmHzBjy-xdiNm8afcImUrWCTp"
+]
+
+var sevenDeadlySinsNums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+    "S1 E13",
+    "S1 E14",
+    "S1 E15",
+    "S1 E16",
+    "S1 E17",
+    "S1 E18",
+    "S1 E19",
+    "S1 E20",
+    "S1 E21",
+    "S1 E22",
+    "S1 E23",
+    "S1 E24"
+]
+
+var sevenDeadlySinsTitles = [
+    "The Seven Deadly Sins",
+    "The Sword of the Holy Knight",
+    "The Sin in the Sleeping Forest",
+    "A Little Girl's Dream",
+    "Even If You Should Die",
+    "The Poem of Beginnings",
+    "A Touching Reunion",
+    "The Fearsome Pursuer",
+    "Dark Pulse",
+    "The Vaizel Fighting Festival",
+    "Pent-Up Feelings",
+    "Bloodcurdling Cannon",
+    "The Angel of Destruction",
+    "A Reader of Books",
+    "Unholy Knight",
+    "The Legends, Provoked",
+    "The First Sacrifice",
+    "Even If It Costs Me My Life",
+    "The Fairy King Waits in Vain",
+    "The Courage Charm",
+    "The Looming Threat",
+    "What I Can Do for You",
+    "Despair Descends",
+    "The Heroes"
+]
+
+// kotaroLivesAlone:
+
+var kotaroLivesAlone = [
+    "1W3j2ZB9_xQrWSCnpUQ2MtwuoRlKJIYLZ",
+    "1Q6UfWTxVOqBmXbftDruYKZpJUClwBJsx",
+    "1uGpMOf_HtW5u6kIbj9rBMJdWXJU3xW5Z",
+    "1d1mwh2QpcW9iDlrKc_96iljxjFhyo9GN",
+    "1uUrOIN_ZvRdhymrCZ099bdYPa5P4Re0O",
+    "1fULnRPhdBZrVSWeKdJm6KsyN2PPU_1Ei",
+    "1JVj_qxI-rn1iIXVBFR84vA2t-PnTCUr3",
+    "1AhiPDjTBalpFB3qQrSMUd9mHRDwcB9yI",
+    "1OkIe_UEI-tUEcx63CUU6uY6-kP2neNvL",
+    "1OJJiIdSCN9WvxRy8tkAheWfXGnQzP3-R"
+]
+
+var kotaroLivesAloneNums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10"
+]
+
+var kotaroLivesAloneTitles = [
+    "Episode 1",
+    "Episode 2",
+    "Episode 3",
+    "Episode 4",
+    "Episode 5",
+    "Episode 6",
+    "Episode 7",
+    "Episode 8",
+    "Episode 9",
+    "Episode 10"
+]
+
+// To Ra Do Ra:
+
+var ToRaDoRa = [
+    "1Xgr0--HJcSLeI7fen8FNQ46JSWquA8CD",
+    "1pkRFDh-PPRLUPd13dqWf_bBl6a8raCzZ",
+    "1ZCvK7FMw-kHiEBoLOXqScAqCSBYf-G2o",
+    "18lCzNNV1UJZ_yCv8XPUWFSkhFCgxbcMD",
+    "1uCw1mzHAvedjkKwtJLL791IUflU4BuBo",
+    "1nIWHlMJxk7kGRQa6QFP-ryJr6axOSc46",
+    "1QZpW5HRhCLbhUMc48RO-NOM81TM5DUnY",
+    "19m-C2j1vjjswG6Ynd_BQbZiKf94EgZPq",
+    "1UuJyD62-ONMMI-sF1vOEfrb1R2qoq74x",
+    "1XrybSAtP7LEW1x2SoMIUFn47PEZuxMTP",
+    "1YEVXDwlwvbGlNQLkgsCHV8jEXZb5-Gd8",
+    "17ANWz_exIUPY40xEphlRD5-mDMcj3_eG",
+    "197jnmm13_UpmtPktsmRX6NzWeekwVU6U",
+    "1jmG_egI5aFSZBZxPMVjsUjcjHRjJIM1u",
+    "1qaOR1_bCVZXH9KIf1mJanDv20MsD82JZ",
+    "1N7YkbZE_qVA_Eh5AEyvbRpfrFXy3DXUF",
+    "1ATDe0sA4fkEtK-O8VZZka8Q2ME3RE2eM",
+    "1VzToePrzUPKhaQi8knDjZtztHFIo44LO",
+    "1vOGWILVqCvHeQpmzLfvfuE8vvawJwiLK",
+    "1Qqjwr7E_lj3-jLkx8lyQbBJbcU820bO_",
+    "1r7S0H3FSUa-mKyR_BS4P2YNECR-vljwo",
+    "1tBZDc9RKfQayemlARx6Hu6t5d_zF7b5r",
+    "1ywFH1ncvS6BdxDgGP8mE9pJdUJlaabyv",
+    "1Vrx66t01WEu0InTo6f70SgaQKlpq4agM",
+    "1QIoZIgB5k4rwxG3cMXOxK9zavZTcpkHd"
+]
+
+var ToRaDoRaNums = [
+    "S1 E1",
+    "S1 E2",
+    "S1 E3",
+    "S1 E4",
+    "S1 E5",
+    "S1 E6",
+    "S1 E7",
+    "S1 E8",
+    "S1 E9",
+    "S1 E10",
+    "S1 E11",
+    "S1 E12",
+    "S1 E13",
+    "S1 E14",
+    "S1 E15",
+    "S1 E16",
+    "S1 E17",
+    "S1 E18",
+    "S1 E19",
+    "S1 E20",
+    "S1 E21",
+    "S1 E22",
+    "S1 E23",
+    "S1 E24",
+    "S1 E25"
+]
+
+var ToRaDoRaTitles = [
+    "Tiger and Dragon",
+    "Ryūji and Taiga",
+    "Your Song",
+    "That Moment’s Expression",
+    "Ami Kawashima",
+    "True Self",
+    "Pool Opening",
+    "For Whose Sake?",
+    "Let’s Go to the Ocean, You Say.",
+    "Fireworks",
+    "Ōhashi High School Cultural Festival (Part One)",
+    "Ōhashi High School Cultural Festival (Part Two)",
+    "Ōhashi High School Cultural Festival (Finale)",
+    "The Palmtop Tiger of Happiness",
+    "The Stars Are Far",
+    "One Step Forward",
+    "Mercury Retrogrades at Christmas",
+    "Under the Fir Tree",
+    "Christmas Eve Festival",
+    "Forever Like This",
+    "No Matter What",
+    "The Scene With You",
+    "The Road That We Must Advance On",
+    "Confession",
+    "Toradora!"
+]
+
 // --------------
 
 var show = "SAO"
@@ -431,6 +718,30 @@ window.onload = function() {
         showNums = GGOnums
         showTitles = GGOtitles
         document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/GGO.png')"
+    }
+    else if (pickedShow === "guiltyCrown") {
+        showCodes = guiltyCrown
+        showNums = guiltyCrownNums
+        showTitles = guiltyCrownTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/guiltyCrown.png')"
+    }
+    else if (pickedShow === "sevenDeadlySins") {
+        showCodes = sevenDeadlySins
+        showNums = sevenDeadlySinsNums
+        showTitles = sevenDeadlySinsTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/sevenDeadlySins.png')"
+    }
+    else if (pickedShow === "kotaroLivesAlone") {
+        showCodes = kotaroLivesAlone
+        showNums = kotaroLivesAloneNums
+        showTitles = kotaroLivesAloneTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/kotaroLivesAlone.png')"
+    }
+    else if (pickedShow === "ToRaDoRa") {
+        showCodes = ToRaDoRa
+        showNums = ToRaDoRaNums
+        showTitles = ToRaDoRaTitles
+        document.querySelector(".show_profile_pic").style.backgroundImage = "url('images/ToRaDoRa.png')"
     }
     document.querySelector(".video_screen").src = "https://docs.google.com/file/d/" + showCodes[0] + "/preview"
     document.querySelector(".episode_title").textContent = showTitles[0]
